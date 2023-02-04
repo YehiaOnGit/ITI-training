@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+              document.getElementById("demo").style.fontSize = "25px"; 
+              document.getElementById("demo").style.color = "red";
+              document.getElementById("demo").style.backgroundColor = "yellow";  
+            }
+            function changeImage() {
+              var image = document.getElementById('myImage');
+              if (image.src.match("bulbon")) {
+                image.src = "photo1.jpg";
+              } else {
+                image.src = "photo2.jpg";
+              }
+            }
+            
+            </script>
+    </head>
+
+<body>
+<h1>My First JavaScript</h1>
+<p id="demo">JavaScript</p>
+<button type="change text" onclick="myFunction()">Click Me!</button>
+<br><br><br>
+<img id="myImage" onclick="changeImage()"src="photo1.jpg" width="100" height="180">
+<p>change image click.</p>
+</body>
+</html>
+
